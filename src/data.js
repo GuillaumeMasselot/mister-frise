@@ -1,8 +1,7 @@
 const data = [
     {
-        date: "2016 – 2018",
-        title: "Lorem",
-        subtitle: "Ipsum",
+        date: "52 BCE",
+        title: "Guerre des Gaules",
         content: `
             dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

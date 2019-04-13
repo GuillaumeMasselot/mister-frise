@@ -21,12 +21,11 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className="root">
                 <Header />
-                <div name="content" style={{margin:20, padding: '20px 0 20px 0'}}>
+                <div name="content" style={{margin:20}}>
                     <Frise timelineSteps={this.state.timeline} />
                 </div>
-                <Footer />
             </div>
         );
     }
