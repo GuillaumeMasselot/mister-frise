@@ -11,6 +11,8 @@ export default class HomeArticles extends Component {
                 </Introduction>
                 <br/>
                 <InteractiveTimeline title="myFrise" timelineUrl={this.props.timelineUrl} />
+                <br />
+                <div>liste d'articles</div>
             </div>
         )
     }
