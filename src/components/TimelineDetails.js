@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import { Timeline, Event } from 'react-timeline-scribble';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
+import { Card, CardContent, Typography } from '@material-ui/core';
 
-import './Frise.css';
-
-class Frise extends Component {
+export default class TimelineDetails extends Component {
     render() {
         return (
             <Card>
@@ -33,5 +29,3 @@ class Frise extends Component {
         )
     }
 }
-
-export default Frise;
