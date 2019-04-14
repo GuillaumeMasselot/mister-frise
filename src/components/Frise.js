@@ -4,6 +4,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
+import './Frise.css';
+
 class Frise extends Component {
     render() {
         return (
@@ -17,9 +19,11 @@ class Frise extends Component {
                     {
                         this.props.timelineSteps.map( (step, i) => {
                             return (
-                                <Event interval={step.date} title={step.title} subtitle={step.subtitle} key={i}>
-                                    {step.content}
-                                </Event>
+                                <div id={i}>
+                                    <Event interval={step.date} title={step.title} subtitle={step.subtitle} key={i}>
+                                        {step.content}
+                                    </Event>
+                                </div>
                             );
                         })
                     }

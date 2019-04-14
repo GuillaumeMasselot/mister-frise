@@ -4,9 +4,7 @@ class Footer extends Component {
     
     render = () => {
         return (
-            <div style={{backgroundColor: '#202124', color: 'white', textAlign: 'center', minHeight: 50}}>
-                Footer
-            </div>
+            <div style={{backgroundColor: '#202124', color: 'white', textAlign: 'center', minHeight: 50}}></div>
         )
     }
 }
