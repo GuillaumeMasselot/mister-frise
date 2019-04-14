@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 
@@ -11,8 +12,8 @@ export default class AppHeader extends Component {
                     <Typography variant="h6" color="inherit" style={{flexGrow: 1}}>
                         Mister Frise
                     </Typography>
-                    <Button color="inherit" href="/">accueil</Button>
-                    <Button color="inherit" href="/events">période & évenements</Button>
+                    <Button color="inherit" component={Link} to="/">accueil</Button>
+                    <Button color="inherit" component={Link} to="/events">période & évenements</Button>
                     <Button color="inherit">personnages</Button>
                     <Button color="inherit">citations</Button>
                     <Button color="inherit">à propos</Button>
