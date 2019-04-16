@@ -5,6 +5,7 @@ import InteractiveTimeline from '../components/InteractiveTimeline';
 import Introduction from '../components/Introduction';
 
 class TimelineArticle extends Component {
+
     render() {
         return (
             <div>

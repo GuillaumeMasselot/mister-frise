@@ -15,8 +15,8 @@ export default class TimelineDetails extends Component {
                     {
                         this.props.timelineSteps.map( (step, i) => {
                             return (
-                                <div id={i}>
-                                    <Event interval={step.date} title={step.title} subtitle={step.subtitle} key={i}>
+                                <div id={i} key={i}>
+                                    <Event interval={step.date} title={step.title} subtitle={step.subtitle}>
                                         {step.content}
                                     </Event>
                                 </div>

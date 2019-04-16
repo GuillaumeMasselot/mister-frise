@@ -12,7 +12,7 @@ export default class InteractiveTimeline extends Component {
                         src={this.props.timelineUrl}
                         width='100%' 
                         height='450' 
-                        webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'>
+                        webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen frameBorder='0'>
                     </iframe>
                 </CardContent>
             </Card>

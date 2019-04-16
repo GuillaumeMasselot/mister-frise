@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import data from './data';
 
 import './App.css';
+import ScrollToTop from './components/ScrollToTop';
 import HomeArticles from './pages/HomeArticles';
 import TimelineArticle from './pages/TimelineArticle';
 
@@ -65,16 +66,17 @@ class App extends Component {
     render() {
         return (
             <Router>
-            <div className="root">
-                <AppHeader />
-                
-                <div name="content" style={{maxWidth: 1080, margin:'0 auto', padding: 10}}>
+                <ScrollToTop>
+                <div className="root">
+                    <AppHeader />
+                    
+                    <div name="content" style={{maxWidth: 1080, margin:'0 auto', padding: 10}}>
 
-                    <Route exact path="/" render={ () => <HomePage articles={this.state.articles} /> } /> 
-                    <Route exact path="/events" render={ () => <EventsPage timeline={this.state.timeline}/> } />
-                 </div>
-                <Footer />
-            </div>
+                        <Route exact path="/" render={ () => <HomePage articles={this.state.articles} /> } /> 
+                        <Route exact path="/events" render={ () => <EventsPage timeline={this.state.timeline}/> } />
+                    </div>
+                    <Footer />
+                </div></ScrollToTop>
             </Router>
         );
     }
