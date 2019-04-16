@@ -20,8 +20,7 @@ export default class HomeArticles extends Component {
                     </p>
                 </div>
                 <br />
-                <SectionTitle>Timeline globale</SectionTitle>
-                <InteractiveTimeline title="myFrise" timelineUrl={this.props.timelineUrl} />
+                <InteractiveTimeline title="Timeline globale" timelineUrl={this.props.timelineUrl} />
                 <br />
                 <SectionTitle>Les derniers articles</SectionTitle>
                 <div style={{marginTop: 5}}>

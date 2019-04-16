@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Card, CardContent, CardMedia, Typography } from '@material-ui/core';
 
-export default class Introduction extends Component {
+export default class DecoratedText extends Component {
     render() {
         return (
             <Card>
