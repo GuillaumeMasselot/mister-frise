@@ -12,11 +12,10 @@ export default class AppHeader extends Component {
                     <Typography variant="h6" color="inherit" style={{flexGrow: 1}}>
                         MISTER FRISE
                     </Typography>
-                    <Button color="inherit" component={Link} to="/">accueil</Button>
-                    <Button color="inherit" component={Link} to="/events">période & évenements</Button>
-                    <Button color="inherit">personnages</Button>
+                    <Button color="inherit" component={Link} to="/">Accueil</Button>
+                    <Button color="inherit" component={Link} to="/events">Articles</Button>
                     <Button color="inherit">citations</Button>
-                    <Button color="inherit">à propos</Button>
+                    <Button color="inherit" component={Link} to="/roadmap">Roadmap</Button>
                 </Toolbar>
             </AppBar>
         )

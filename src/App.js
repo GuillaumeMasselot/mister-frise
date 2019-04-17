@@ -10,6 +10,7 @@ import './App.css';
 import ScrollToTop from './components/ScrollToTop';
 import HomeArticles from './pages/HomeArticles';
 import TimelineArticle from './pages/TimelineArticle';
+import Roadmap from './pages/Roadmap';
 
 const HomePage = (props) => {
     return (
@@ -67,16 +68,17 @@ class App extends Component {
         return (
             <Router>
                 <ScrollToTop>
-                <div className="root">
-                    <AppHeader />
-                    
-                    <div name="content" style={{maxWidth: 1080, margin:'0 auto', padding: 10}}>
-
-                        <Route exact path="/" render={ () => <HomePage articles={this.state.articles} /> } /> 
-                        <Route exact path="/events" render={ () => <EventsPage timeline={this.state.timeline}/> } />
+                    <div className="root">
+                        <AppHeader />
+                        <div name="content" style={{maxWidth: 1080, margin:'0 auto', padding: 10}}>
+                            <Route exact path="/" render={ () => <HomePage articles={this.state.articles} /> } /> 
+                            <Route exact path="/events" render={ () => <EventsPage timeline={this.state.timeline}/> } />
+                            <Route exact path="/roadmap" component={Roadmap} />
+                        </div>
+                        <br/>
+                        <Footer />
                     </div>
-                    <Footer />
-                </div></ScrollToTop>
+                </ScrollToTop>
             </Router>
         );
     }
