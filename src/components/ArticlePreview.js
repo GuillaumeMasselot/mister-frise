@@ -9,7 +9,7 @@ export default class ArticlePreview extends Component {
         const { imgUrl } = this.props;
         return (
             <Card style={{maxHeight: 450}}>
-                <CardActionArea component={Link} to="/events">
+                <CardActionArea component={Link} to="/articles">
                     <CardHeader
                         avatar={
                             <Avatar aria-label="lala" style={{backgroundColor: "darkred"}}>
