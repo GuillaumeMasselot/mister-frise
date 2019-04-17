@@ -16,10 +16,13 @@ export default class HomeArticles extends Component {
                 <div style={{textAlign: 'center'}}>
                     <h3>BIENVENUE SUR MISTER FRISE</h3>
                     <p style={{fontSize: "130%"}}>
-                        <em>« Celui qui ne connaît pas l'histoire est condamné à la revivre. » <strong style={{fontStyle: 'normal'}}>- Karl Marx</strong></em>
+                        <em>
+                            <span>« Celui qui ne connaît pas l'histoire est condamné à la revivre. »</span>
+                            <br/>
+                            <strong style={{fontStyle: 'normal'}}>Karl Marx</strong>
+                        </em>
                     </p>
                 </div>
-                <br />
                 <InteractiveTimeline title="Timeline globale" timelineUrl={this.props.timelineUrl} />
                 <br />
                 <SectionTitle>Les derniers articles</SectionTitle>

@@ -72,7 +72,7 @@ class App extends Component {
                         <AppHeader />
                         <div name="content" style={{maxWidth: 1080, margin:'0 auto', padding: 10}}>
                             <Route exact path="/" render={ () => <HomePage articles={this.state.articles} /> } /> 
-                            <Route exact path="/events" render={ () => <EventsPage timeline={this.state.timeline}/> } />
+                            <Route exact path="/articles" render={ () => <EventsPage timeline={this.state.timeline}/> } />
                             <Route exact path="/roadmap" component={Roadmap} />
                         </div>
                         <br/>
