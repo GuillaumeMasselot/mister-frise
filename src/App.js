@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AppHeader from './components/AppHeader';
 import Footer from './components/Footer';
 
-import data from './data';
+import articlesList from './data';
 
 import './App.css';
 import ScrollToTop from './components/ScrollToTop';
@@ -15,10 +15,8 @@ import Roadmap from './pages/Roadmap';
 const HomePage = (props) => {
     return (
         <HomeArticles 
-            imgUrl="http://www.ostazak.com/wp-content/uploads/2014/12/history.jpg"
-            title="Titre"
             timelineUrl="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1mGgy8vLhvmV4jGSKTlwRrRYzEgoHRNAK2E9w99wz_0g&font=Default&lang=fr&initial_zoom=0&height=450"
-            articles={props.articles}
+            articles={props.articlesList}
         />
     )
 }
@@ -47,32 +45,26 @@ const EventsPage = (props) => {
 
 class App extends Component {
     state = {
-        timeline: [],
         articles: []
     }
 
     componentWillMount() {
         this.setState({
-            timeline: data,
-            articles: [{
-                url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Persepolis_stairs_of_the_Apadana_relief.jpg/1920px-Persepolis_stairs_of_the_Apadana_relief.jpg"
-            }, {
-                url: "http://www.kickassfacts.com/wp-content/uploads/2015/02/Genghis-Khan-620x330.jpg"
-            }, {
-                url: "http://cdn.segmentnext.com/wp-content/uploads/2013/09/Rome-2-Spartans.jpg"
-            }]
+            articles: articlesList
         });
     }
 
     render() {
+        const firstEvent = this.state.articles[0].events;
+
         return (
             <Router>
                 <ScrollToTop>
                     <div className="root">
                         <AppHeader />
                         <div name="content" style={{maxWidth: 1080, margin:'0 auto', padding: 10}}>
-                            <Route exact path="/" render={ () => <HomePage articles={this.state.articles} /> } /> 
-                            <Route exact path="/articles" render={ () => <EventsPage timeline={this.state.timeline}/> } />
+                            <Route exact path="/" render={ () => <HomePage articlesList={this.state.articles} /> } /> 
+                            <Route exact path="/articles" render={ () => <EventsPage timeline={firstEvent}/> } />
                             <Route exact path="/roadmap" component={Roadmap} />
                         </div>
                         <br/>

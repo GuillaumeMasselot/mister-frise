@@ -13,7 +13,7 @@ export default class AppHeader extends Component {
                         MISTER FRISE
                     </Typography>
                     <Button color="inherit" component={Link} to="/">Accueil</Button>
-                    <Button color="inherit" component={Link} to="/events">Articles</Button>
+                    <Button color="inherit" component={Link} to="/articles">Articles</Button>
                     <Button color="inherit">citations</Button>
                     <Button color="inherit" component={Link} to="/roadmap">Roadmap</Button>
                 </Toolbar>

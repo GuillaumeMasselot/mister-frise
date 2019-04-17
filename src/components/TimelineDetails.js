@@ -17,7 +17,7 @@ export default class TimelineDetails extends Component {
                                 return (
                                     <div id={i} key={i}>
                                         <Event interval={step.date} title={step.title} subtitle={step.subtitle}>
-                                            {step.content}
+                                            {step.details}
                                         </Event>
                                     </div>
                                 );

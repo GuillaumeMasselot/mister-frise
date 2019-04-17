@@ -11,6 +11,8 @@ export default class HomeArticles extends Component {
     }
     
     render() {
+        const maxArticles = 3;
+        const firstThreeArticles = this.props.articles.filter((i, index) => (index < maxArticles));
         return (
             <div>
                 <div style={{textAlign: 'center'}}>
@@ -26,10 +28,10 @@ export default class HomeArticles extends Component {
                 <SectionTitle>Les derniers articles</SectionTitle>
                 <div style={{marginTop: 5}}>
                 {
-                    this.props.articles.map( (step, i) => {
+                    firstThreeArticles.map( (article, i) => {
                         return (
                             <div key={i} >
-                                <ArticlePreview imgUrl={step.url}/>
+                                <ArticlePreview {...article} />
                                 <br />
                             </div>
                         )
