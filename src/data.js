@@ -215,7 +215,7 @@ export const quotesList = [{
         img: "http://cdn.images.express.co.uk/img/dynamic/141/590x/secondary/Churchill-428016.jpg"
     }, {
         author: "Marc Aurèle",
-        text: "“On n'est pas moins fautif en ne faisant pas ce qu'on doit faire qu'en faisant ce qu'on ne doit pas faire.”",
+        text: "On n'est pas moins fautif en ne faisant pas ce qu'on doit faire qu'en faisant ce qu'on ne doit pas faire.",
         img: "https://f.hypotheses.org/wp-content/blogs.dir/1157/files/2014/03/Mar-Aur%C3%A8le.jpg"
     }, {
         author: "John Fitzgerald Kennedy",
