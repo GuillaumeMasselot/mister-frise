@@ -205,4 +205,23 @@ const articlesList = [{
     }
 }];
 
+export const quotesList = [{
+        author: "Karl Marx",
+        text: "Celui qui ne connaît pas l'histoire est condamné à la revivre.",
+        img: "https://media.salon.com/2014/04/karl_marx.jpg"
+    }, {
+        author: "Winston Churchill",
+        text: "Le succès c'est d'aller d'échec en échec sans perdre son enthousiasme.",
+        img: "http://cdn.images.express.co.uk/img/dynamic/141/590x/secondary/Churchill-428016.jpg"
+    }, {
+        author: "Marc Aurèle",
+        text: "“On n'est pas moins fautif en ne faisant pas ce qu'on doit faire qu'en faisant ce qu'on ne doit pas faire.”",
+        img: "https://f.hypotheses.org/wp-content/blogs.dir/1157/files/2014/03/Mar-Aur%C3%A8le.jpg"
+    }, {
+        author: "John Fitzgerald Kennedy",
+        text: "Ceux qui rendent une révolution pacifique impossible rendront une révolution violente inévitable.",
+        img: "https://www.goliath.com/wp-content/uploads/2016/03/jfk-in-his-own-words-1920.jpg"
+    }
+]
+
 export default articlesList;
