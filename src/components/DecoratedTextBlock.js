@@ -17,7 +17,7 @@ export default class DecoratedText extends Component {
                     <Typography gutterBottom variant="h5" component="h2">
                         {this.props.title}
                     </Typography>
-                    <Typography component="p">
+                    <Typography>
                         {this.props.children}
                     </Typography>
                 </CardContent>

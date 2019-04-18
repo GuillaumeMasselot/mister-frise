@@ -5,11 +5,13 @@ import { Card, CardMedia, CardHeader, CardContent, Avatar, CardActionArea, Typog
 import Tags from './Tags';
 
 export default class ArticlePreview extends Component {
+    
     render() {
-        const { imgUrl, title, metadatas, intro } = this.props;
+        const { imgUrl, title, metadatas, intro, id } = this.props;
+        const redirectUrl = `/articles/${id}`;
         return (
             <Card style={{maxHeight: 450}}>
-                <CardActionArea component={Link} to="/articles">
+                <CardActionArea component={Link} to={redirectUrl}>
                     <CardHeader
                         avatar={
                             <Avatar aria-label="author" style={{backgroundColor: "darkred"}}>
@@ -27,7 +29,7 @@ export default class ArticlePreview extends Component {
                         style={{objectFit: 'cover'}}
                     />
                     <CardContent>
-                        <Typography component="p" style={{maxHeight: 60, overflow: "hidden"}}>
+                        <Typography style={{maxHeight: 60, overflow: "hidden"}}>
                             {intro}
                         </Typography>
                         <br/>

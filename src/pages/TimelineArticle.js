@@ -5,25 +5,47 @@ import InteractiveTimeline from '../components/InteractiveTimeline';
 import DecoratedTextBlock from '../components/DecoratedTextBlock';
 import SimpleTextBlock from '../components/SimpleTextBlock';
 
+//temp
+import articlesList from '../data'
+
 class TimelineArticle extends Component {
 
+    state = {
+        article: {}
+    }
+
+    componentWillMount () {
+        const { id } = this.props.match.params;
+
+        this.setState({
+            article: articlesList.find( article => article.id === Number(id) )
+        });
+    }
+
     render() {
+        const { imgUrl, title, intro, timelineUrl, events, notes, links, sources } = this.state.article;
         return (
             <div>
-                <DecoratedTextBlock imgUrl={this.props.imgUrl} title={this.props.title}>
-                    {this.props.summary}
+                <DecoratedTextBlock imgUrl={imgUrl} title={title}>
+                    {intro}
                 </DecoratedTextBlock>
                 <br/>
-                    <InteractiveTimeline title="Timeline" timelineUrl={this.props.timelineUrl} />
+                    <InteractiveTimeline title="Timeline" timelineUrl={timelineUrl} />
                 <br/>
-                <TimelineDetails timelineSteps={this.props.timelineSteps} title="Timeline" />
+                <TimelineDetails timelineSteps={events} title="Timeline" />
                 <br/>
                 <SimpleTextBlock title="Notes">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {notes}
                 </SimpleTextBlock>
                 <br />
                 <SimpleTextBlock title="Sources & liens">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {
+                        sources.map( (source, index) => <a href={source} key={index}>{source}</a>)
+                    }
+                    <br/>
+                    {
+                        links.map( (link, index) => <a href={link} key={index}>{link}</a>)
+                    }
                 </SimpleTextBlock>
             </div>
         )
