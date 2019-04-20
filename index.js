@@ -20,6 +20,7 @@ app.use(function(req, res, next) {
 const config = require('./server/config.js');
 const mongoose = require('mongoose');
 require('./server/quote.routes.js')(app);  //Add route file here
+app.use(express.static('client/build'));
 
 mongoose.Promise = global.Promise;
 
