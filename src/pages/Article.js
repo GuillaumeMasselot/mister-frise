@@ -8,7 +8,7 @@ import SimpleTextBlock from '../components/SimpleTextBlock';
 //temp
 import articlesList from '../data'
 
-class TimelineArticle extends Component {
+export default class Article extends Component {
 
     state = {
         article: {}
@@ -51,5 +51,3 @@ class TimelineArticle extends Component {
         )
     }
 }
-
-export default TimelineArticle;

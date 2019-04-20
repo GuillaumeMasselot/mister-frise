@@ -7,7 +7,7 @@ import SectionTitle from '../components/SectionTitle';
 // temp
 import articlesList from '../data';
 
-export default class HomeArticles extends Component {
+export default class Home extends Component {
     state = {
         maxArticles: 3,
         firstThreeArticles: []
