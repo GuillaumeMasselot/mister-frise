@@ -40,7 +40,7 @@ app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-// listen on port 3000
+// listen on port 5000
 app.listen(process.env.PORT || config.serverport, () => {
-    console.log("Server is listening on port 3000");
+    console.log("Server is listening on port 5000");
 });
