@@ -9,6 +9,7 @@ import AppDrawer from './components/AppDrawer';
 import Home from './pages/Home';
 import Article from './pages/Article';
 import Roadmap from './pages/Roadmap';
+import ArticlesHub from './pages/ArticlesHub';
 
 import articlesList from './data';
 
@@ -21,7 +22,7 @@ const routes = [{
 }, {
     name: 'Articles',
     path: '/articles',
-    to: '/articles/2'
+    to: '/articles'
 }, {
     name: 'Citations',
     path: '/quotes',
@@ -66,6 +67,7 @@ class App extends Component {
                         
                         <div name="content" style={{maxWidth: 1080, margin:'0 auto', padding: 10}}>
                             <Route exact path="/" component={Home} /> 
+                            <Route exact path="/articles" component={ArticlesHub} />
                             <Route exact path="/articles/:id" component={Article} />
                             <Route exact path="/quotes" component={Quotes} />
                             <Route exact path="/roadmap" component={Roadmap} />

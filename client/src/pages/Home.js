@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import InteractiveTimeline from '../components/InteractiveTimeline';
 import ArticlePreview from '../components/ArticlePreview';
 import SectionTitle from '../components/SectionTitle';
 
@@ -19,10 +18,6 @@ export default class Home extends Component {
         });
     }
     
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-    
     render() {
         
         return (
@@ -35,10 +30,6 @@ export default class Home extends Component {
                         <strong style={{fontStyle: 'normal'}}>Karl Marx</strong>
                     </p>
                 </div>
-                <InteractiveTimeline 
-                    title="Timeline globale"
-                    timelineUrl="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1mGgy8vLhvmV4jGSKTlwRrRYzEgoHRNAK2E9w99wz_0g&font=Default&lang=fr&hash_bookmark=true&initial_zoom=0&height=350" />
-                <br />
                 <SectionTitle>Les derniers articles</SectionTitle>
                 <div style={{marginTop: 5}}>
                 {

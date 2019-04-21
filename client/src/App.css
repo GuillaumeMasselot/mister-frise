@@ -15,3 +15,8 @@ and (max-device-width : 480px){
 @media screen and (min-width: 800px) {
     .desktopHide { display: none !important;}
 }
+
+.crossed {
+    text-decoration: line-through;
+    color: gray;
+}
