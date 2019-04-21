@@ -4,18 +4,30 @@ import InteractiveTimeline from '../components/InteractiveTimeline';
 import ArticlePreview from '../components/ArticlePreview';
 import SectionTitle from '../components/SectionTitle';
 
-import articlesList from '../data';
-
 export default class ArticlesHub extends Component {
     state = {
         articles: []
     }
 
     componentWillMount() {
-        this.setState({
-            articles: articlesList
-        });
+        this.getArticles()
+        .then(res => {
+            this.setState({
+                articles: res
+            });
+        })
+        .catch(err => console.log(err));
     }
+
+    getArticles = async () => {
+        const response = await fetch('/articles');
+        const body = await response.json();
+    
+        if (response.status !== 200) {
+          throw Error(body.message) 
+        }
+        return body;
+    };
 
     render() {
         

@@ -11,39 +11,31 @@ import Article from './pages/Article';
 import Roadmap from './pages/Roadmap';
 import ArticlesHub from './pages/ArticlesHub';
 
-import articlesList from './data';
-
 import './App.css';
 
-const routes = [{
-    name: 'Accueil',
-    path: '/',
-    to: '/'
-}, {
-    name: 'Articles',
-    path: '/articles',
-    to: '/articles'
-}, {
-    name: 'Citations',
-    path: '/quotes',
-    to: '/quotes'
-}, {
-    name: 'Roadmap',
-    path: '/roadmap',
-    to: '/roadmap'
-}]
+const routes = [
+    {
+        name: 'Accueil',
+        path: '/',
+        to: '/'
+    }, {
+        name: 'Articles',
+        path: '/articles',
+        to: '/articles'
+    }, {
+        name: 'Citations',
+        path: '/quotes',
+        to: '/quotes'
+    }, {
+        name: 'Roadmap',
+        path: '/roadmap',
+        to: '/roadmap'
+    }
+]
 
 class App extends Component {
     state = {
-        articles: [],
         open: false
-    }
-
-    componentWillMount() {
-        this.setState({
-            articles: articlesList
-        });
-
     }
 
     handleDrawerOpen = () => {
@@ -82,7 +74,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-//
-//

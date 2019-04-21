@@ -9,7 +9,7 @@ export default class Tags extends Component {
                     this.props.tags.map( (tag, i) => {
                         return (
                             <Grid key={i} item>
-                                <Chip label={tag.name}/>
+                                <Chip label={tag}/>
                             </Grid>
                         )
                     })

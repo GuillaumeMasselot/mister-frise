@@ -1,4 +1,4 @@
 module.exports = {
-    url: 'mongodb+srv://Guest:Guest@cluster0-fahtn.mongodb.net/misterfrise?retryWrites=true',
+    url: 'mongodb+srv://Skas:Akuma67MDB!@cluster0-fahtn.mongodb.net/misterfrise?retryWrites=true',
     serverport: 5000 
 }

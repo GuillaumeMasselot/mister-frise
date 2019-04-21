@@ -22,6 +22,7 @@ const mongoose = require('mongoose');
 const path = require("path");
 
 require('./server/quote.routes.js')(app);  //Add route file here
+require('./server/article.routes.js')(app);  //Add route file here
 app.use(express.static(path.join(__dirname, "client", "build")));
 
 mongoose.Promise = global.Promise;

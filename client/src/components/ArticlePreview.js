@@ -7,8 +7,9 @@ import Tags from './Tags';
 export default class ArticlePreview extends Component {
     
     render() {
-        const { imgUrl, title, metadatas, intro, id } = this.props;
-        const redirectUrl = `/articles/${id}`;
+        const { imgUrl, title, author, createdAt, intro, tags, _id } = this.props;
+        const redirectUrl = `/articles/${_id}`;
+        const createdDate = new Date(createdAt).toLocaleDateString();
         return (
             <Card style={{maxHeight: 450}}>
                 <CardActionArea component={Link} to={redirectUrl}>
@@ -19,7 +20,7 @@ export default class ArticlePreview extends Component {
                             </Avatar>
                         }
                         title={title}
-                        subheader={`Publié le ${metadatas.date} par ${metadatas.author}`}
+                        subheader={`Publié le ${createdDate} par ${author}`}
                     />
                     <CardMedia
                         component="img"
@@ -33,7 +34,7 @@ export default class ArticlePreview extends Component {
                             {intro}
                         </Typography>
                         <br/>
-                        <Tags tags={metadatas.tags} />
+                        <Tags tags={tags} />
                     </CardContent>
                 </CardActionArea>
             </Card>

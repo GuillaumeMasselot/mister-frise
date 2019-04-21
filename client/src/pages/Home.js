@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import ArticlePreview from '../components/ArticlePreview';
 import SectionTitle from '../components/SectionTitle';
 
-// temp
-import articlesList from '../data';
-
 export default class Home extends Component {
     state = {
         maxArticles: 3,
@@ -13,10 +10,24 @@ export default class Home extends Component {
     }
 
     componentWillMount() {
-        this.setState({
-            firstThreeArticles: articlesList.filter((i, index) => (index < this.state.maxArticles))
-        });
+        this.getArticles()
+        .then(res => {
+            this.setState({
+                firstThreeArticles: res.filter((i, index) => (index < this.state.maxArticles))
+            });
+        })
+        .catch(err => console.log(err));
     }
+
+    getArticles = async () => {
+        const response = await fetch('/articles');
+        const body = await response.json();
+    
+        if (response.status !== 200) {
+          throw Error(body.message) 
+        }
+        return body;
+    };
     
     render() {
         

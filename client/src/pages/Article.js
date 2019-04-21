@@ -5,26 +5,41 @@ import InteractiveTimeline from '../components/InteractiveTimeline';
 import DecoratedTextBlock from '../components/DecoratedTextBlock';
 import SimpleTextBlock from '../components/SimpleTextBlock';
 
-//temp
-import articlesList from '../data'
-
 export default class Article extends Component {
 
     state = {
-        article: {}
+        article: {},
+        loaded: false
     }
 
     componentWillMount () {
-        const { id } = this.props.match.params;
 
-        this.setState({
-            article: articlesList.find( article => article.id === Number(id) )
-        });
+        this.getArticle()
+        .then(res => {
+            this.setState({
+                article: res,
+                loaded: true
+            });
+        })
+        .catch(err => console.log(err));
     }
 
+    getArticle = async () => {
+        const { id } = this.props.match.params;
+
+        const response = await fetch(`/articles/${id}`);
+        const body = await response.json();
+    
+        if (response.status !== 200) {
+          throw Error(body.message) 
+        }
+        return body;
+    };
+
     render() {
+        const { loaded } = this.state;
         const { imgUrl, title, intro, timelineUrl, events, notes, links, sources } = this.state.article;
-        return (
+        return loaded ? (
             <div>
                 <DecoratedTextBlock imgUrl={imgUrl} title={title}>
                     {intro}
@@ -48,6 +63,6 @@ export default class Article extends Component {
                     }
                 </SimpleTextBlock>
             </div>
-        )
+        ) : <div>Loading...</div>
     }
 }
