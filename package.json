@@ -2,11 +2,14 @@
   "name": "mister-frise",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "engines": {
+    "node": "10.15.3"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
   "homepage": "https://github.com/GuillaumeMasselot/mister-frise#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "mongoose": "^5.5.2"
   }

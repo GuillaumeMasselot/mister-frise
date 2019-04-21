@@ -19,8 +19,10 @@ app.use(function(req, res, next) {
 // Configuring the database
 const config = require('./server/config.js');
 const mongoose = require('mongoose');
+const path = require("path");
+
 require('./server/quote.routes.js')(app);  //Add route file here
-app.use(express.static('client/build'));
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 mongoose.Promise = global.Promise;
 
@@ -34,12 +36,11 @@ mongoose.connect(config.url, {
     process.exit();
 });
 
-// default route
-app.get('/', (req, res) => {
-    res.json({"message": "Welcome to ZeptoBook Product app"});
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
-// listen on port 3030
+// listen on port 3000
 app.listen(config.serverport, () => {
-    console.log("Server is listening on port 3030");
+    console.log("Server is listening on port 3000");
 });
