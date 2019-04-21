@@ -37,7 +37,7 @@ mongoose.connect(config.url, {
 });
 
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 // listen on port 3000
