@@ -29,7 +29,7 @@ class AppHeader extends Component {
                             onClick={onOpen}>
                             <MenuIcon />
                         </IconButton>
-                        <Typography variant="h6" color="inherit" style={{flexGrow: 1}}>
+                        <Typography variant="h6" color="inherit" style={{flexGrow: 1}} className="mobileCenter">
                             MISTER FRISE
                         </Typography>
                         <div className="mobileHide">
