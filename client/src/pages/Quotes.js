@@ -20,9 +20,9 @@ export default class Quotes extends Component {
     }
 
     getQuotes = async () => {
-        const response = await fetch('/quotes');
+        const response = await fetch('/getquotes');
         const body = await response.json();
-    
+
         if (response.status !== 200) {
           throw Error(body.message) 
         }

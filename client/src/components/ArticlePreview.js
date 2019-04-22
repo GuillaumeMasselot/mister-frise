@@ -5,7 +5,7 @@ import { Card, CardMedia, CardHeader, CardContent, Avatar, CardActionArea, Typog
 import Tags from './Tags';
 
 export default class ArticlePreview extends Component {
-    
+
     render() {
         const { imgUrl, title, author, createdAt, intro, tags, _id } = this.props;
         const redirectUrl = `/articles/${_id}`;
@@ -14,11 +14,6 @@ export default class ArticlePreview extends Component {
             <Card style={{maxHeight: 450}}>
                 <CardActionArea component={Link} to={redirectUrl}>
                     <CardHeader
-                        avatar={
-                            <Avatar aria-label="author" style={{backgroundColor: "darkred"}}>
-                                E
-                            </Avatar>
-                        }
                         title={title}
                         subheader={`Publié le ${createdDate} par ${author}`}
                     />

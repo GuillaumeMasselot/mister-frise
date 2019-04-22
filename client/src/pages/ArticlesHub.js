@@ -20,9 +20,9 @@ export default class ArticlesHub extends Component {
     }
 
     getArticles = async () => {
-        const response = await fetch('/articles');
+        const response = await fetch('/getarticles');
         const body = await response.json();
-    
+
         if (response.status !== 200) {
           throw Error(body.message) 
         }
@@ -30,12 +30,12 @@ export default class ArticlesHub extends Component {
     };
 
     render() {
-        
+        const timelineURL = 'https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1mGgy8vLhvmV4jGSKTlwRrRYzEgoHRNAK2E9w99wz_0g&font=Fjalla-Average&lang=fr&initial_zoom=2&start_at_slide=3&height=400';
         return (
             <div>
                 <InteractiveTimeline 
-                    title="Timeline globale"
-                    timelineUrl="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1mGgy8vLhvmV4jGSKTlwRrRYzEgoHRNAK2E9w99wz_0g&font=Default&lang=fr&hash_bookmark=true&initial_zoom=0&height=350" />
+                    title='Frise des articles et événements majeurs'
+                    timelineUrl={timelineURL} />
                 <br />
                 <SectionTitle>Tous les articles</SectionTitle>
                 <div style={{marginTop: 5}}>

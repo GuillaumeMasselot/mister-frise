@@ -20,15 +20,15 @@ export default class Home extends Component {
     }
 
     getArticles = async () => {
-        const response = await fetch('/articles');
+        const response = await fetch('/getarticles');
         const body = await response.json();
-    
+
         if (response.status !== 200) {
           throw Error(body.message) 
         }
         return body;
     };
-    
+
     render() {
         
         return (

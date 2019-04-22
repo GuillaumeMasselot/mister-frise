@@ -27,9 +27,9 @@ export default class Article extends Component {
     getArticle = async () => {
         const { id } = this.props.match.params;
 
-        const response = await fetch(`/articles/${id}`);
+        const response = await fetch(`/getarticle/${id}`);
         const body = await response.json();
-    
+
         if (response.status !== 200) {
           throw Error(body.message) 
         }
@@ -55,11 +55,11 @@ export default class Article extends Component {
                 <br />
                 <SimpleTextBlock title="Sources & liens">
                     {
-                        sources.map( (source, index) => <a href={source} key={index}>{source}</a>)
+                        sources.map( (source, index) => <a href={source} key={index}>{source}</a> )
                     }
                     <br/>
                     {
-                        links.map( (link, index) => <a href={link} key={index}>{link}</a>)
+                        links.map( (link, index) => <a href={link} key={index}>{link}</a> )
                     }
                 </SimpleTextBlock>
             </div>

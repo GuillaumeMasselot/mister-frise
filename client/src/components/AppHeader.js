@@ -14,14 +14,14 @@ class AppHeader extends Component {
         const isCurrentPath = isHome ? currentPath === '/' : currentPath.includes(path);
         return { color: isCurrentPath ? '#ffffff' : '#cccccc' };
     }
-    
+
     render = () => {
         const { routes, onOpen } = this.props;
         return (
             <div>
                 <AppBar position="static" style={{backgroundColor: '#202124', color: 'white'}}>
                     <Toolbar>
-                        <IconButton 
+                        <IconButton
                             className="desktopHide"
                             style={{marginLeft: -12, marginRight: 20}}
                             color="inherit"

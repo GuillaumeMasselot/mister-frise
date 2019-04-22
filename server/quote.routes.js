@@ -2,8 +2,8 @@ module.exports = (app) => {
     const quotes = require('./quote.controller.js');
 
     // Create a new Quotes
-    app.post('/quotes', quotes.create);
+    app.post('/addquote', quotes.create);
 
     // Retrieve all Quotes
-    app.get('/quotes', quotes.findAll);
+    app.get('/getquotes', quotes.findAll);
 }
