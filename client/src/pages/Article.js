@@ -48,20 +48,30 @@ export default class Article extends Component {
                     <InteractiveTimeline title="Timeline" timelineUrl={timelineUrl} />
                 <br/>
                 <TimelineDetails timelineSteps={events} title="Timeline" />
-                <br/>
-                <SimpleTextBlock title="Notes">
-                    {notes}
-                </SimpleTextBlock>
-                <br />
-                <SimpleTextBlock title="Sources & liens">
-                    {
-                        sources.map( (source, index) => <a href={source} key={index}>{source}</a> )
-                    }
-                    <br/>
-                    {
-                        links.map( (link, index) => <a href={link} key={index}>{link}</a> )
-                    }
-                </SimpleTextBlock>
+                {
+                    notes.length > 0 &&
+                    <div>
+                        <br/>
+                        <SimpleTextBlock title="Notes">
+                            {notes}
+                        </SimpleTextBlock>
+                    </div>
+                }
+                {
+                    (sources.length > 0 || links.length > 0) &&
+                    <div>
+                        <br />
+                        <SimpleTextBlock title="Sources & liens">
+                            {
+                                sources.map( (source, index) => <a href={source} key={index}>{source}</a> )
+                            }
+                            <br/>
+                            {
+                                links.map( (link, index) => <a href={link} key={index}>{link}</a> )
+                            }
+                        </SimpleTextBlock>
+                    </div>
+                }
             </div>
         ) : <div>Loading...</div>
     }

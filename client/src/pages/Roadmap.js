@@ -17,7 +17,7 @@ export default class Roadmap extends Component {
                 </SimpleTextBlock>
                 <SimpleTextBlock title="Lot 2 : Fonctionnalités avancées">
                     <ul>
-                        <li>Timeline globale sur page d'accueil</li>
+                        <li className="crossed">Timeline globale sur page d'articles</li>
                         <li>Tri/Filtre des articles par type (personnage, bataille, event, etc...)</li>
                         <li>Recherche</li>
                         <li>Intégration de Chronas.org</li>
@@ -25,7 +25,7 @@ export default class Roadmap extends Component {
                 </SimpleTextBlock>
                 <SimpleTextBlock title="Lot 3 : Mode création de contenu">
                     <ul>
-                        <li>Page d'ajout d'article (local)</li>
+                        <li>Page d'ajout d'article</li>
                         <li>Export as PDF</li>
                     </ul>
                 </SimpleTextBlock>

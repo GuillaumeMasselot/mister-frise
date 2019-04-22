@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
-import { Card, CardMedia, CardHeader, CardContent, Avatar, CardActionArea, Typography } from '@material-ui/core';
+import { Card, CardMedia, CardHeader, CardContent, CardActionArea, Typography } from '@material-ui/core';
 import Tags from './Tags';
+
+import './ArticlePreview.css';
 
 export default class ArticlePreview extends Component {
 
@@ -11,7 +13,7 @@ export default class ArticlePreview extends Component {
         const redirectUrl = `/articles/${_id}`;
         const createdDate = new Date(createdAt).toLocaleDateString();
         return (
-            <Card style={{maxHeight: 450}}>
+            <Card style={{maxHeight: 420}}>
                 <CardActionArea component={Link} to={redirectUrl}>
                     <CardHeader
                         title={title}
@@ -25,7 +27,7 @@ export default class ArticlePreview extends Component {
                         style={{objectFit: 'cover'}}
                     />
                     <CardContent>
-                        <Typography style={{maxHeight: 60, overflow: "hidden"}}>
+                        <Typography className='ellipsis'>
                             {intro}
                         </Typography>
                         <br/>
