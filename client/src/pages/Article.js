@@ -38,16 +38,16 @@ export default class Article extends Component {
 
     render() {
         const { loaded } = this.state;
-        const { imgUrl, title, intro, timelineUrl, events, notes, links, sources } = this.state.article;
+        const { imgUrl, title, intro, events, notes, links, sources } = this.state.article;
         return loaded ? (
             <div>
                 <DecoratedTextBlock imgUrl={imgUrl} title={title}>
                     {intro}
                 </DecoratedTextBlock>
                 <br/>
-                    <InteractiveTimeline title="Timeline" timelineUrl={timelineUrl} />
+                    <InteractiveTimeline title="Timeline" article={this.state.article} />
                 <br/>
-                <TimelineDetails timelineSteps={events} title="Timeline" />
+                <TimelineDetails timelineSteps={events} title="Timeline"/>
                 {
                     notes.length > 0 &&
                     <div>
