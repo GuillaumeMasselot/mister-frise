@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Card, CardContent } from '@material-ui/core';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
 import SectionTitle from './SectionTitle';
 
 export default class SimpleTextBlock extends Component {

@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
-import { Card, CardMedia, CardHeader, CardContent, CardActionArea, Typography } from '@material-ui/core';
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import Typography from '@material-ui/core/Typography';
 import Tags from './Tags';
 
 import './ArticlePreview.css';

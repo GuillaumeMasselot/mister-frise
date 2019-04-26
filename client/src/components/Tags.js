@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Grid, Chip } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import Chip from '@material-ui/core/Chip';
 
 export default class Tags extends Component {
     render() {

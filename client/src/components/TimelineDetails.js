@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Timeline, Event } from 'react-timeline-scribble';
-import { Card, CardContent } from '@material-ui/core';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
 import SectionTitle from './SectionTitle';
 import { parseDate } from '../utils/dateParser';
 

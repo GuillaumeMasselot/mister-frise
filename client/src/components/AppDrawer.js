@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
-import { IconButton, Drawer, Divider, List, ListItem, ListItemText } from '@material-ui/core';
+import IconButton from '@material-ui/core/IconButton';
+import Drawer from '@material-ui/core/Drawer';
+import Divider from '@material-ui/core/Divider';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 
 const drawerWidth = 240;
