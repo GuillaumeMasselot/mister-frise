@@ -9,7 +9,7 @@ export default class TimelineDetails extends Component {
     render() {
         return (
             <div>
-                <SectionTitle>Détails</SectionTitle>
+                <SectionTitle>évenements majeurs</SectionTitle>
                 <Card>
                     <CardContent>
                         <br/>
