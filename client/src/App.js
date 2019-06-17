@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Article from './pages/Article';
 import Roadmap from './pages/Roadmap';
 import ArticlesHub from './pages/ArticlesHub';
+import CreateContent from './pages/CreateContent';
 
 import './App.css';
 
@@ -63,6 +64,7 @@ class App extends Component {
                             <Route exact path="/articles/:id" component={Article} />
                             <Route exact path="/quotes" component={Quotes} />
                             <Route exact path="/roadmap" component={Roadmap} />
+                            <Route exact path="/createContent" component={CreateContent} />
                         </div>
                         <br/>
                         <Footer />

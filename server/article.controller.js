@@ -2,6 +2,7 @@ const Article = require('./article.model.js');
 
 // Create new article
 exports.create = (req, res) => {
+    console.log("req", req);
     // Request validation
     if (!req.body) {
         return res.status(400).send({
@@ -9,7 +10,7 @@ exports.create = (req, res) => {
         });
     }
 
-    console.log("req", req);
+    console.log("req add", req)
 
     // Create a article
     const article = new Article({
@@ -39,6 +40,8 @@ exports.create = (req, res) => {
 
 // Retrieve all articles from the database.
 exports.findAll = (req, res) => {
+    console.log("req", req);
+    console.log("res", res);
     Article.find()
     .then(articles => {
         res.send(articles);
