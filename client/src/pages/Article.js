@@ -57,7 +57,7 @@ export default class Article extends Component {
                         <SimpleTextBlock title="Notes">
                         {
                             notes.map( (note, i) => {
-                                const jump = (i !== notes.length) && <div><br/></div>;
+                                const jump = (i !== notes.length - 1) && <div><br/></div>;
                                 return (
                                     <div key={i}>
                                         {note}
