@@ -30,6 +30,8 @@ export default class Article extends Component {
         const response = await fetch(`/getarticle/${id}`);
         const body = await response.json();
 
+        console.log(body);
+
         if (response.status !== 200) {
           throw Error(body.message) 
         }
@@ -45,7 +47,7 @@ export default class Article extends Component {
                     {intro}
                 </DecoratedTextBlock>
                 <br/>
-                    <InteractiveTimeline title="Timeline" article={this.state.article} />
+                <InteractiveTimeline title="Timeline" article={this.state.article} />
                 <br/>
                 <TimelineDetails timelineSteps={events} title="Timeline"/>
                 {
@@ -53,7 +55,17 @@ export default class Article extends Component {
                     <div>
                         <br/>
                         <SimpleTextBlock title="Notes">
-                            {notes}
+                        {
+                            notes.map( (note, i) => {
+                                const jump = (i !== notes.length) && <div><br/></div>;
+                                return (
+                                    <div key={i}>
+                                        {note}
+                                        {jump}
+                                    </div>
+                                );
+                            })
+                        }
                         </SimpleTextBlock>
                     </div>
                 }
