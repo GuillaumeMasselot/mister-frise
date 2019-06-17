@@ -16,15 +16,13 @@ exports.create = (req, res) => {
     const article = new Article({
         title: req.body.title,
         imgUrl: req.body.imgUrl,
-        timelineUrl: req.body.timelineUrl,
         chronasUrl: req.body.chronasUrl,
         intro: req.body.intro,
-        familyTree: req.body.familyTree,
         events: req.body.events,
         notes: req.body.notes,
         sources: req.body.sources,
         links: req.body.links,
-        author: req.body.author,
+        author: "Skas",
         tags: req.body.tags
     });
 

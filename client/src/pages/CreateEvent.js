@@ -10,12 +10,8 @@ export default class CreateEvent extends Component {
         subtitle: this.props.event.subtitle || '',
         start: this.props.event.start || '',
         end: this.props.event.end || '',
-        text: this.props.event.text || '',
-    }
-
-    toDate = (str) => {
-        const dmy = str.split("/");
-        return str && new Date(dmy[2], dmy[1] - 1, dmy[0]).getTime();
+        dateLabel: this.props.event.dateLabel || '',
+        details: this.props.event.text || '',
     }
 
     handleChange = name => event => {
@@ -23,19 +19,11 @@ export default class CreateEvent extends Component {
     };
 
     handleBlur = () => {
-        console.log("start", this.toDate(this.state.start));
-        let parsedState = {
-            title: this.state.title,
-            subtitle: this.state.subtitle,
-            start: this.toDate(this.state.start),
-            end: this.toDate(this.state.end),
-            text: this.state.text
-        }
-        this.props.updateEvent(parsedState);
+        this.props.updateEvent(this.state);
     }
 
     render() {
-        const { title, subtitle, start, end, text } = this.state;
+        const { title, subtitle, start, end, details, dateLabel } = this.state;
         return (
             <div>
                 <TextField
@@ -54,6 +42,16 @@ export default class CreateEvent extends Component {
                     className="text-field"
                     value={subtitle}
                     onChange={this.handleChange('subtitle')}
+                    onBlur={this.handleBlur}
+                    margin="normal"
+                />
+                <br/>
+                <TextField
+                    id="dateLabel"
+                    label="Label associé à la date (optionnel)"
+                    className="text-field"
+                    value={dateLabel}
+                    onChange={this.handleChange('dateLabel')}
                     onBlur={this.handleBlur}
                     margin="normal"
                 />
@@ -86,12 +84,12 @@ export default class CreateEvent extends Component {
                 </Grid>
                 <br/>
                 <TextField
-                    id="text"
+                    id="details"
                     label="Description"
                     multiline
                     rowsMax="4"
-                    value={text}
-                    onChange={this.handleChange('text')}
+                    value={details}
+                    onChange={this.handleChange('details')}
                     onBlur={this.handleBlur}
                     className="text-field"
                     margin="normal"

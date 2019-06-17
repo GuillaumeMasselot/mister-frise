@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 
 const EventSchema = mongoose.Schema({
-    start: Number,
-    end: Number,
+    start: String,
+    end: String,
+    dateLabel: String,
     title: String,
     subtitle: String,
     img: String,
@@ -12,7 +13,6 @@ const EventSchema = mongoose.Schema({
 const ArticleSchema = mongoose.Schema({
     title: String,
     imgUrl: String,
-    timelineUrl:  String,
     chronasUrl: String,
     intro: String,
     notes: [String],

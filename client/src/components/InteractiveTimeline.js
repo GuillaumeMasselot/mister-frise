@@ -10,13 +10,19 @@ export default class InteractiveTimeline extends Component {
             const { TL } = window;
             const { events: evts, _id: id } = this.props.article;
             const events = evts.map(event => {
-                const date = new Date(event.start);
+                const dmy = event.start.split("/");
+                // const dmyend = event.end && event.end.split("/");
                 return {
                     start_date: {
-                        year: date.getFullYear(),
-                        month: date.getMonth()+1,
-                        day: date.getDate()
+                        year: dmy[2],
+                        month: dmy[1],
+                        day: dmy[0]
                     },
+                    // end_date : event.end && {
+                    //     year: dmyend[2],
+                    //     month: dmyend[1],
+                    //     day: dmyend[0]
+                    // },
                     text: {
                         headline: event.title,
                         text: event.subtitle || ''
