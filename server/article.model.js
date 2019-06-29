@@ -7,8 +7,9 @@ const EventSchema = mongoose.Schema({
     title: String,
     subtitle: String,
     img: String,
-    details: String
-});
+    details: String,
+    group: String
+}, { _id: false});
 
 const ArticleSchema = mongoose.Schema({
     title: String,

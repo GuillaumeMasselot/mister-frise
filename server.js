@@ -1,7 +1,9 @@
 // get dependencies
 const express = require('express');
 const bodyParser = require('body-parser');
-
+const yaml = require('js-yaml');
+const fs = require('fs');
+const Article = require('./server/article.model');
 const app = express();
 
 // parse requests
@@ -31,7 +33,33 @@ mongoose.Promise = global.Promise;
 mongoose.connect(config.url, {
     useNewUrlParser: true
 }).then(() => {
-    console.log("Successfully connected to the database");    
+    console.log("Successfully connected to the database");
+    
+    // // Get document, or throw exception on error
+    // try {
+    //   var doc = yaml.safeLoad(fs.readFileSync(__dirname + '/articles/civilisations_anciennes.yml', 'utf8'));
+    //   let formatedEvents = doc.events.map(e => e.event);
+    //   console.log(formatedEvents)
+    //   const article = new Article({
+    //     title: doc.title,
+    //     imgUrl: doc.imgUrl,
+    //     chronasUrl: doc.chronasUrl,
+    //     intro: doc.intro,
+    //     events: formatedEvents,
+    //     notes: doc.notes,
+    //     sources: doc.sources,
+    //     links: doc.links,
+    //     author: "Skas",
+    //     tags: doc.tags
+    // });
+    
+    // article.save( (err, article) => {
+    //     // console.log(err);
+    //     // console.log(article);
+    // })
+    // } catch (e) {
+    //   console.log(e);
+    // } 
 }).catch(err => {
     console.log('Could not connect to the database. Exiting now...', err);
     // process.exit();

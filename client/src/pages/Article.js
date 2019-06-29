@@ -16,6 +16,7 @@ export default class Article extends Component {
 
         this.getArticle()
         .then(res => {
+            console.log("res", res);
             this.setState({
                 article: res,
                 loaded: true

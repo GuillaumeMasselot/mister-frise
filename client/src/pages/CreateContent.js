@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import SectionTitle from '../components/SectionTitle';
-
+// import fs from 'fs';
 import './CreateContent.css'
 import CreateEvent from './CreateEvent';
 

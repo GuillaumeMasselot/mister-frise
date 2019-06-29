@@ -1,0 +1,300 @@
+title: Les civilisations anciennes
+intro: A venir
+imgUrl: https://ak7.picdn.net/shutterstock/videos/13856177/thumb/1.jpg
+notes:
+  - note
+events:
+  - event: 
+      title: Civilisation mésopotamienne
+      subtitle: 
+      start: -3400
+      end: -600
+      dateLabel:
+      details: Aux Sumériens succèdent les Akkadiens
+      group: Afrique et Moyen Orient
+  - event: 
+      title: Egypte ancienne
+      subtitle: 
+      start: -3300
+      end: -400
+      dateLabel: 
+      details: 
+      group: Afrique et Moyen Orient
+  - event: 
+      title: Civilisation de l'Indus
+      subtitle: 
+      start: -2500
+      end: -1700
+      dateLabel: 
+      details: 
+  - event: 
+      title: Hittites
+      subtitle: 
+      start: -1900
+      end: -800
+      dateLabel: 
+      details: 
+      group: Afrique et Moyen Orient
+  - event: 
+      title: Civilisation chinoise
+      subtitle: 
+      start: -1500
+      end: 
+      dateLabel: 
+      details: 
+      group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Olmèques
+      subtitle: 
+      start: -1200
+      end: -400
+      dateLabel: 
+      details:
+      group: Amérique centrale et du sud
+  - event: 
+      title: Carthage
+      subtitle: 
+      start: -800
+      end: -200
+      dateLabel: 
+      details: Guerres puniques
+      group: Afrique et Moyen Orient
+  - event: 
+      title: Perse achéménide
+      subtitle: Naissance et première apogée de la civilisation perse
+      start: -600
+      end: -400
+      dateLabel: 
+      details: 
+  - event: 
+      title: Méroé
+      subtitle: 
+      start: -600
+      end: 300
+      dateLabel: 
+      details: 
+      group: Afrique et Moyen Orient
+  - event: 
+      title: Grèce classique
+      subtitle: 
+      start: -500
+      end: -400
+      dateLabel: 
+      details:
+      group: Europe
+  - event: 
+      title: Zapotèques
+      subtitle: 
+      start: -400
+      end: 800
+      dateLabel: 
+      details: 
+      group: Amérique centrale et du sud
+  - event: 
+      title: Inde des Maurya
+      subtitle: Première apogée de la civilisation indienne, née au cours du Ier millénaire avant notre ère
+      start: -400
+      end: -200
+      dateLabel: 
+      group: 
+      details:
+  - event: 
+      title: Dai Viêt
+      subtitle: Futur Vietnam
+      start: -300
+      end: 
+      dateLabel: 
+      details:
+      group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Mayas
+      subtitle: 
+      start: -300
+      end: 1500
+      dateLabel: 
+      details: 
+      group: Amérique centrale et du sud
+  - event: 
+      title: Chine des Han
+      subtitle: Première apogée de la civilisation chinoise née au cours du IIe millénaire avant notre ère
+      start: -200
+      end: 200
+      dateLabel: 
+      details: 
+      group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Corée
+      subtitle: 
+      start: -200
+      end: 
+      dateLabel: 
+      details: 
+      group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Empire romain
+      subtitle: 
+      start: -100
+      end: 400
+      dateLabel: 
+      group: Europe
+      details: 
+  - event: 
+      title: Teotihuacán
+      subtitle: 
+      start: -100
+      end: 1200
+      dateLabel: 
+      details: 
+      group: Amérique centrale et du sud
+  #- event: 
+   #   title: Ethiopie
+   #   subtitle: 
+   #   start: 
+   #   end: 
+   #   dateLabel: 
+   #   group: 
+   #   details:
+  #- event: 
+  #    title: Japon
+  #    subtitle: 
+  #    start: 0
+  #    end: 
+  #    dateLabel: 
+  #    details: 
+   #   group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Tibet
+      subtitle: 
+      start: 500
+      end: 
+      dateLabel: 
+      details: 
+      group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Huari
+      subtitle: 
+      start: 500
+      end: 1000
+      dateLabel: 
+      details: 
+      group: Amérique centrale et du sud
+  - event: 
+      title: Srivijaya
+      subtitle: Thalassocratie malaise
+      start: 600
+      end: 1300
+      dateLabel: 
+      details: 
+      group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Royaumes javanais
+      subtitle: 
+      start: 700
+      end: 1400
+      dateLabel: 
+      details: 
+      group: Asie de l'est / Asie du sud-est  
+ # - event: 
+ #     title: Califat abbasside
+ #     subtitle: A son apogée fin VIIIe siècle, il résulte de l'expansion arabe musulmane
+ #     start: 
+ #     end: 
+ #     dateLabel: 
+ #     group: 
+ #     details: 
+  - event: 
+      title: Angkor
+      subtitle: Empire khmer
+      start: 800
+      end: 1400
+      dateLabel: 
+      details:
+      group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Pagan
+      subtitle: Empire birman
+      start: 800
+      end: 1200
+      dateLabel: 
+      details: 
+      group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Ifé
+      subtitle: 
+      start: 800
+      end: 1400
+      dateLabel: 
+      group: Afrique et Moyen Orient
+      details: 
+  - event: 
+      title: Russie kiévienne
+      subtitle: Aux origines de la Russie
+      start: 800
+      end: 1100
+      dateLabel: 
+      group: Europe
+      details: 
+  - event: 
+      title: Kanem-Bornou
+      subtitle: 
+      start: 900
+      end: 1800
+      dateLabel: 
+      group: Afrique et Moyen Orient
+      details: 
+  - event: 
+      title: Chimu
+      subtitle: 
+      start: 900
+      end: 1400
+      dateLabel: 
+      details:  
+      group: Amérique centrale et du sud
+  - event: 
+      title: Siam
+      subtitle: 
+      start: 1200
+      end: 
+      dateLabel: 
+      details: 
+      group: Asie de l'est / Asie du sud-est
+  - event: 
+      title: Mali
+      subtitle: 
+      start: 1200
+      end: 1400
+      dateLabel: 
+      group: Afrique et Moyen Orient
+      details: 
+  - event: 
+      title: Zimbabwe
+      subtitle: 
+      start: 1200
+      end: 1400
+      dateLabel: 
+      group: Afrique et Moyen Orient
+      details: 
+  - event: 
+      title: Songhaï
+      subtitle: 
+      start: 1400
+      end: 1500
+      dateLabel: 
+      group: Afrique et Moyen Orient
+      details: 
+  - event: 
+      title: Azthèque
+      subtitle: 
+      start: 1400
+      end: 1500
+      dateLabel: 
+      details: 
+      group: Amérique centrale et du sud
+  - event: 
+      title: Incas
+      subtitle: 
+      start: 1400
+      end: 1500
+      dateLabel: 
+      details: 
+      group: Amérique centrale et du sud

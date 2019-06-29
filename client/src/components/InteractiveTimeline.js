@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import SectionTitle from './SectionTitle';
+import { parseDateAlt } from '../utils/dateParser';
 
 export default class InteractiveTimeline extends Component {
 
@@ -10,24 +11,19 @@ export default class InteractiveTimeline extends Component {
             const { TL } = window;
             const { events: evts, _id: id } = this.props.article;
             const events = evts.map(event => {
-                const dmy = event.start.split("/");
-                // const dmyend = event.end && event.end.split("/");
-                return {
-                    start_date: {
-                        year: dmy[2],
-                        month: dmy[1],
-                        day: dmy[0]
-                    },
-                    // end_date : event.end && {
-                    //     year: dmyend[2],
-                    //     month: dmyend[1],
-                    //     day: dmyend[0]
-                    // },
+                let tljsevent = {
+                    start_date: parseDateAlt(event.start),
+                    display_date: event.dateLabel,
                     text: {
                         headline: event.title,
                         text: event.subtitle || ''
-                    }
+                    },
+                    group: event.group
                 }
+                if (event.end) {
+                    tljsevent.end_date = parseDateAlt(event.end)
+                }
+                return tljsevent;
             })
             const timelineJson = {
                 events: events
@@ -35,7 +31,7 @@ export default class InteractiveTimeline extends Component {
             const options = {
                 debug: true,
                 language: 'fr',
-                start_at_slide: 1,
+                start_at_slide: 0,
                 initial_zoom: "0"
             }
             const timeline = new TL.Timeline(id, timelineJson, options);
