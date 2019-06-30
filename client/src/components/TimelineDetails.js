@@ -6,6 +6,20 @@ import SectionTitle from './SectionTitle';
 import { parseDate } from '../utils/dateParser';
 
 export default class TimelineDetails extends Component {
+
+    getInterval(step) {
+        if (step.dateLabel) {
+            return step.dateLabel;
+        }
+        if (step.start) {
+            if (step.end) {
+                return `De ${parseDate(step.start)} à ${parseDate(step.end)}`
+            }
+            return parseDate(step.start);
+        }
+        return null;
+    }
+
     render() {
         return (
             <div>
@@ -18,7 +32,7 @@ export default class TimelineDetails extends Component {
                             this.props.timelineSteps.map( (step, i) => {
                                 return (
                                     <div id={i} key={i}>
-                                        <Event interval={step.dateLabel || parseDate(step.start)} title={step.title} subtitle={step.subtitle}>
+                                        <Event interval={this.getInterval(step)} title={step.title} subtitle={step.subtitle}>
                                             {step.details}
                                         </Event>
                                     </div>
