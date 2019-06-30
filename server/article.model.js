@@ -12,6 +12,7 @@ const EventSchema = mongoose.Schema({
 }, { _id: false});
 
 const ArticleSchema = mongoose.Schema({
+    _id: String,
     title: String,
     imgUrl: String,
     chronasUrl: String,
@@ -23,7 +24,8 @@ const ArticleSchema = mongoose.Schema({
     tags: [String],
     events: [EventSchema]
 }, {
-    timestamps: true
+    timestamps: true,
+    _id: false
 });
 
 module.exports = mongoose.model('Articles', ArticleSchema);
