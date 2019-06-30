@@ -2,6 +2,10 @@
 
 Bienvenue sur le site Mister Frise qui se propose de présenter l'Histoire à travers des articles très "visuels".
 
+## Avancement du projet
+
+Le suivi de l'avancement du projet est dispo [ici](https://trello.com/b/kqVTfmsU/mister-frise)
+
 ## Rédiger un article
 
 Les articles du site sont rédigés au format [Yaml](https://yaml.org/).
