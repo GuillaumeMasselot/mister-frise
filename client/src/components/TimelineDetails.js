@@ -13,7 +13,7 @@ export default class TimelineDetails extends Component {
         }
         if (step.start) {
             if (step.end) {
-                return `De ${parseDate(step.start)} à ${parseDate(step.end)}`
+                return `${parseDate(step.start)} - ${parseDate(step.end)}`
             }
             return parseDate(step.start);
         }
