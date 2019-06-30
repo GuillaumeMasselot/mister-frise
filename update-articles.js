@@ -43,7 +43,7 @@ mongoose.connect(config.url, {
         }
         
         const EXTENSION = '.yml';
-        files.filter((file) => path.extname(file).toLowerCase() === EXTENSION).forEach((file) => {
+        files.filter(file => path.extname(file).toLowerCase() === EXTENSION).forEach(file => {
             try {
                 var doc = yaml.safeLoad(fs.readFileSync(`${articlesDir}/${file}`, 'utf8'));
                 let formatedEvents = doc.events.map(e => e.event);
@@ -64,13 +64,13 @@ mongoose.connect(config.url, {
                 Article.findByIdAndUpdate(
                     article._id, 
                     article,
-                    {new: true},
+                    { new: true },
                     (err, todo) => {
                         // Handle any possible database errors
                         if (err) console.log(`Erreur update ${article._id}`);
                         if (!todo) {
                             article.save( (err, article) => {
-                                console.log(`Erreur création de l'article ${article._id}`, err);
+                                if (err) console.log(`Erreur création de l'article ${article._id}`, err);
                                 console.log(`Nouvel article créé ${article._id}`);
                             });
                         } else {
@@ -80,7 +80,7 @@ mongoose.connect(config.url, {
                 );
             } catch (e) {
                 console.log("error", e);
-            } 
+            }
         });
     });
     
