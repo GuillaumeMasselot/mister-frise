@@ -1,4 +1,4 @@
-author: Skas
+author: Masselot G.
 wip: true
 title: La guerre des Gaules
 intro: A venir
@@ -8,12 +8,42 @@ tags:
   - Celtes
   - Culture
   - Politique
+notes:
+  - Jules Cesar n'a jamais été empereur. Imperator = titre militaire
+  - Vercingetorix est un Arverne (celte). Gaullois est un terme romain.
+  - Brennus en premice en -390 avec le sac of Rome.
+  - Les romains étaient allés avec pas mal de "tribues" celtes et Vercingetorix était même compagnon de tente avec César dans de précédentes campagnes.
+  - Il y avait beaucoup de commerce entre les "tribues" celtes et les romains, notamment du vin et de l'huile d'olive (romain) contre des céréales, du fer et des esclaves (celtes).
+  - Peut être les celtes se sont ils fait frapper en transition entre "barbares" et "civilisés".
 events:
-  - event : 
-      title : todo
-      subtitle : 
-      start : -58
-      end : 
-      dateLabel : 
-      group : 
-      details : 
+  - event: 
+      title: Les Germains traversent le Rhin
+      subtitle: 
+      start: -72
+      details: Arioviste traverse le Rhin ainsi que des populations suèves des vallées du Neckar et du Main. Au fil des ans, les peuples germaniques ayant traversé le Rhin atteignent près de 120 000 personnes.
+  - event: 
+      title: Migration des Helvètes
+      subtitle: L'exode
+      start: -58
+      details: Les Helvètes migrent pour survivre à l'expansion germanique et choisissent de passer par Genua, la dernière ville des Allobroges et allé de Rome (368 000 personnes dont 92 000 en arme selon César).
+  - event: 
+      title: Bataille de Bibracte
+      subtitle: Rome refuse le passage
+      start: -58
+      dateLabel: Le 13 avril de 58 av. JC.
+      details: >
+        La demande Helvète d'autorisation de passer pacifiquement est refusée par les romains. 
+        Ils passent donc par le territoire Séquane mais sur leur route ils ravagent les territoires Héduens, des alliés de Rome, qui demandent à César d'intervenir. 
+        Cela fournit une excuse rêvée à César pour commencer sa campagne. 
+        César écrit que la première charge des celtes est terriblement féroce mais que résister à cette première charge (par l'organisation notamment) est quasiment gage de victoire. 
+        Les romains s'imposent donc, faisant quelques 200 000 victimes celtes (chiffres dur à valider, à prendre avec des pincettes).
+  - event: 
+      title: Bataille de l'Ochsenfeld
+      subtitle: La gestion du problème germanique 
+      start: -58
+      dateLabel: Dans la foulée de la guerre des Helvètes
+      details: >
+        La guerre des Helvètes étant terminée, des députés de presque toute la Gaule et les principaux habitants des cités viennent féliciter César et lui demandent de régler le problème germanique, au nord.
+        'César fait alors envoyer un message à Arioviste se résumant grossièrement par : "Votre invasion doit cesser. Rencontrons-nous à mi-chemin pour en discuter"'.
+        'Ce à quoi le chef Suève répond : "Si je veux te parler, je viendrai à toi. Si tu veux me parler, viens à moi. Il n'y a rien que nous faisions que vous ne fassiez pas"'.
+        Les germains, menés par Arioviste, sont vaincus et Rome s'empare de tous les territoires germains (Suèves).
