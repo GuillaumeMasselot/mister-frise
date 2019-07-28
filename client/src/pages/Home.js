@@ -12,6 +12,12 @@ export default class Home extends Component {
     componentWillMount() {
         this.getArticles()
         .then(res => {
+            res.sort(function(a,b){
+                // Turn your strings into dates, and then subtract them
+                // to get a value that is either negative, positive, or zero.
+                return new Date(b.createdAt) - new Date(a.createdAt);
+            });
+            console.log(res);
             this.setState({
                 firstThreeArticles: res.filter((i, index) => (index < this.state.maxArticles))
             });

@@ -1,4 +1,5 @@
 author: Skas
+wip: true
 title: Les civilisations anciennes
 intro: A venir
 imgUrl: https://ak7.picdn.net/shutterstock/videos/13856177/thumb/1.jpg
@@ -12,7 +13,6 @@ events:
       end: -600
       dateLabel:
       details: Aux Sumériens succèdent les Akkadiens
-      group: Afrique et Moyen Orient
   - event: 
       title: Egypte ancienne
       subtitle: 
@@ -20,7 +20,6 @@ events:
       end: -400
       dateLabel: 
       details: 
-      group: Afrique et Moyen Orient
   - event: 
       title: Civilisation de l'Indus
       subtitle: 
@@ -35,7 +34,6 @@ events:
       end: -800
       dateLabel: 
       details: 
-      group: Afrique et Moyen Orient
   - event: 
       title: Civilisation chinoise
       subtitle: 
@@ -43,7 +41,6 @@ events:
       end: 
       dateLabel: 
       details: 
-      group: Asie de l'est / Asie du sud-est
   - event: 
       title: Olmèques
       subtitle: 
@@ -51,7 +48,6 @@ events:
       end: -400
       dateLabel: 
       details:
-      group: Amérique centrale et du sud
   - event: 
       title: Carthage
       subtitle: 
@@ -59,7 +55,6 @@ events:
       end: -200
       dateLabel: 
       details: Guerres puniques
-      group: Afrique et Moyen Orient
   - event: 
       title: Perse achéménide
       subtitle: Naissance et première apogée de la civilisation perse
@@ -74,15 +69,12 @@ events:
       end: 300
       dateLabel: 
       details: 
-      group: Afrique et Moyen Orient
   - event: 
       title: Grèce classique
       subtitle: 
       start: -500
       end: -400
       dateLabel: 
-      details:
-      group: Europe
   - event: 
       title: Zapotèques
       subtitle: 
@@ -90,7 +82,6 @@ events:
       end: 800
       dateLabel: 
       details: 
-      group: Amérique centrale et du sud
   - event: 
       title: Inde des Maurya
       subtitle: Première apogée de la civilisation indienne, née au cours du Ier millénaire avant notre ère
@@ -106,7 +97,6 @@ events:
       end: 
       dateLabel: 
       details:
-      group: Asie de l'est / Asie du sud-est
   - event: 
       title: Mayas
       subtitle: 
@@ -114,7 +104,6 @@ events:
       end: 1500
       dateLabel: 
       details: 
-      group: Amérique centrale et du sud
   - event: 
       title: Chine des Han
       subtitle: Première apogée de la civilisation chinoise née au cours du IIe millénaire avant notre ère
@@ -122,7 +111,6 @@ events:
       end: 200
       dateLabel: 
       details: 
-      group: Asie de l'est / Asie du sud-est
   - event: 
       title: Corée
       subtitle: 
@@ -130,14 +118,12 @@ events:
       end: 
       dateLabel: 
       details: 
-      group: Asie de l'est / Asie du sud-est
   - event: 
       title: Empire romain
       subtitle: 
       start: -100
       end: 400
       dateLabel: 
-      group: Europe
       details: 
   - event: 
       title: Teotihuacán
@@ -146,7 +132,6 @@ events:
       end: 1200
       dateLabel: 
       details: 
-      group: Amérique centrale et du sud
   #- event: 
    #   title: Ethiopie
    #   subtitle: 
@@ -170,7 +155,6 @@ events:
       end: 
       dateLabel: 
       details: 
-      group: Asie de l'est / Asie du sud-est
   - event: 
       title: Huari
       subtitle: 
@@ -178,7 +162,6 @@ events:
       end: 1000
       dateLabel: 
       details: 
-      group: Amérique centrale et du sud
   - event: 
       title: Srivijaya
       subtitle: Thalassocratie malaise
@@ -186,7 +169,6 @@ events:
       end: 1300
       dateLabel: 
       details: 
-      group: Asie de l'est / Asie du sud-est
   - event: 
       title: Royaumes javanais
       subtitle: 
@@ -194,7 +176,6 @@ events:
       end: 1400
       dateLabel: 
       details: 
-      group: Asie de l'est / Asie du sud-est  
  # - event: 
  #     title: Califat abbasside
  #     subtitle: A son apogée fin VIIIe siècle, il résulte de l'expansion arabe musulmane
@@ -210,7 +191,6 @@ events:
       end: 1400
       dateLabel: 
       details:
-      group: Asie de l'est / Asie du sud-est
   - event: 
       title: Pagan
       subtitle: Empire birman
@@ -218,14 +198,12 @@ events:
       end: 1200
       dateLabel: 
       details: 
-      group: Asie de l'est / Asie du sud-est
   - event: 
       title: Ifé
       subtitle: 
       start: 800
       end: 1400
       dateLabel: 
-      group: Afrique et Moyen Orient
       details: 
   - event: 
       title: Russie kiévienne
@@ -233,7 +211,6 @@ events:
       start: 800
       end: 1100
       dateLabel: 
-      group: Europe
       details: 
   - event: 
       title: Kanem-Bornou
@@ -241,7 +218,6 @@ events:
       start: 900
       end: 1800
       dateLabel: 
-      group: Afrique et Moyen Orient
       details: 
   - event: 
       title: Chimu
@@ -250,7 +226,6 @@ events:
       end: 1400
       dateLabel: 
       details:  
-      group: Amérique centrale et du sud
   - event: 
       title: Siam
       subtitle: 
@@ -258,14 +233,12 @@ events:
       end: 
       dateLabel: 
       details: 
-      group: Asie de l'est / Asie du sud-est
   - event: 
       title: Mali
       subtitle: 
       start: 1200
       end: 1400
       dateLabel: 
-      group: Afrique et Moyen Orient
       details: 
   - event: 
       title: Zimbabwe
@@ -273,7 +246,6 @@ events:
       start: 1200
       end: 1400
       dateLabel: 
-      group: Afrique et Moyen Orient
       details: 
   - event: 
       title: Songhaï
@@ -281,7 +253,6 @@ events:
       start: 1400
       end: 1500
       dateLabel: 
-      group: Afrique et Moyen Orient
       details: 
   - event: 
       title: Azthèque
@@ -290,7 +261,6 @@ events:
       end: 1500
       dateLabel: 
       details: 
-      group: Amérique centrale et du sud
   - event: 
       title: Incas
       subtitle: 
@@ -298,4 +268,3 @@ events:
       end: 1500
       dateLabel: 
       details: 
-      group: Amérique centrale et du sud

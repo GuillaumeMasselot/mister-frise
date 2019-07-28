@@ -58,7 +58,8 @@ mongoose.connect(config.url, {
                     sources: doc.sources,
                     links: doc.links,
                     author: doc.author,
-                    tags: doc.tags
+                    tags: doc.tags,
+                    wip: doc.wip
                 });
 
                 Article.findByIdAndUpdate(

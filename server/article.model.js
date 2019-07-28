@@ -13,6 +13,7 @@ const EventSchema = mongoose.Schema({
 
 const ArticleSchema = mongoose.Schema({
     _id: String,
+    wip: Boolean,
     title: String,
     imgUrl: String,
     chronasUrl: String,
@@ -22,7 +23,9 @@ const ArticleSchema = mongoose.Schema({
     links: [String],
     author: String,
     tags: [String],
-    events: [EventSchema]
+    events: [EventSchema],
+    updatedAt: String,
+    createdAt: String
 }, {
     timestamps: true,
     _id: false

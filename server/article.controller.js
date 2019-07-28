@@ -22,8 +22,9 @@ exports.create = (req, res) => {
         notes: req.body.notes,
         sources: req.body.sources,
         links: req.body.links,
-        author: "Skas",
-        tags: req.body.tags
+        author: req.body.author,
+        tags: req.body.tags,
+        wip: req.body.wip
     });
 
     article.save()
