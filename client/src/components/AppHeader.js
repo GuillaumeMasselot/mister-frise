@@ -4,6 +4,8 @@ import { Link, withRouter } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+
+import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -33,8 +35,12 @@ class AppHeader extends Component {
                             onClick={onOpen}>
                             <MenuIcon />
                         </IconButton>
+                        <Avatar
+                            alt="logo"
+                            src="logoround.png"
+                            style={{height: 40, width: 40, margin: 'auto 10px auto auto'}} />
                         <Typography variant="h6" color="inherit" style={{flexGrow: 1}} className="mobileCenter">
-                            MISTER FRISE
+                            MONSIEUR FRISE
                         </Typography>
                         <div className="mobileHide">
                             {

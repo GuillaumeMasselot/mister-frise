@@ -1,9 +1,9 @@
 {
-  "short_name": "Mister Frise",
-  "name": "Mister Frise",
+  "short_name": "Monsieur Frise",
+  "name": "Monsieur Frise",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logoround.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
