@@ -37,7 +37,7 @@ class AppHeader extends Component {
                         </IconButton>
                         <Avatar
                             alt="logo"
-                            src="%PUBLIC_URL%/logoround.png"
+                            src="logoround.png"
                             style={{height: 40, width: 40, margin: 'auto 10px auto auto'}} />
                         <Typography variant="h6" color="inherit" style={{flexGrow: 1}} className="mobileCenter">
                             MONSIEUR FRISE
