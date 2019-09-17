@@ -40,7 +40,7 @@ class AppHeader extends Component {
                             src={window.location.origin + '/logoround.png'}
                             style={{height: 40, width: 40, margin: 'auto 10px auto auto'}} />
                         <Typography variant="h6" color="inherit" style={{flexGrow: 1}} className="mobileCenter">
-                            MONSIEUR FRISE
+                            MISTER FRISE
                         </Typography>
                         <div className="mobileHide">
                             {
