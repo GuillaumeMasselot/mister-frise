@@ -20,7 +20,7 @@ export default class ArticlePreview extends Component {
         const { wip } = this.props;
         if (wip) {
             return (
-                <Avatar aria-label="work in progress" style={{backgroundColor: 'red'}}>
+                <Avatar aria-label="work in progress" style={{backgroundColor: 'orangered'}}>
                     <ReportProblemIcon />
                 </Avatar>
             )
