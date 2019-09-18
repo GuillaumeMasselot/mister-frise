@@ -35,13 +35,20 @@ class AppHeader extends Component {
                             onClick={onOpen}>
                             <MenuIcon />
                         </IconButton>
-                        <Avatar
-                            alt="logo"
-                            src={window.location.origin + '/logoround.png'}
-                            style={{height: 40, width: 40, margin: 'auto 10px auto auto'}} />
-                        <Typography variant="h6" color="inherit" style={{flexGrow: 1}} className="mobileCenter">
-                            MISTER FRISE
-                        </Typography>
+                        <div style={{display: "flex"}} className="mobileCenter">
+                            <Typography variant="h6" color="inherit" style={{fontFamily: "Dancing Script", margin: 'auto 5px auto 0'}}>Mister</Typography>
+                            
+                            <Avatar
+                                alt="logo"
+                                src={window.location.origin + '/logoround.png'}
+                                style={{height: 40, width: 40}} />
+
+                            <Typography variant="h6" color="inherit" style={{fontFamily: "Dancing Script", margin: 'auto auto auto 5px'}}>Frise</Typography>
+
+                        </div>
+
+                        <div className="desktopHide" style={{width: 48}}></div>
+                        
                         <div className="mobileHide">
                             {
                                 routes.map( (route, index) => {
