@@ -38,21 +38,21 @@ events:
       subtitle : L'officialisation du statut
       start : -31
       details : >
-        Le premier empereur romain s'atèle rapidement à faire des prétoriens une institution permanente.
+        Le premier empereur romain s'atèle rapidement à faire des prétoriens une <strong>institution permanente</strong>.<br/>
         Elle est initialement créée de l'union des prétoriens défaits de Marc Antoine et des siens, tous issus ou presque des vétérans des armées de César.
   - event : 
       title : Officialisation des privilèges
       start : -27
       details : >
-        Auguste fait passer un décret au Sénat qui autorise les prétoriens à jouir d'une paie deux fois
-        plus élevée qu'un légionnaire normal (ça montera jusqu'à 3.33 fois par la suite) et des primes supérieures.
+        Auguste fait passer un décret au Sénat qui autorise les prétoriens à jouir d'une <strong>paie deux fois
+        plus élevée</strong> qu'un légionnaire normal (ça montera jusqu'à 3.33 fois par la suite) et des primes supérieures.<br/>
         La durée de leur service est également plus faible et fixée à 12 ans (au lieu de 16) par Auguste.
   - event : 
       title : Un nouveau commandement
       start : -2
       details : >
-        "Le poste de préfet du prétoire est créé pour le commandement de la garde prétorienne et est assuré par deux membres de l'ordre équestre : P. Salvius Aper et Q. Ostorius Scapula.
-        Leur succésseur peut être un préfet unique."
+        Le poste de préfet du prétoire est créé pour le commandement de la garde prétorienne et est assuré par deux membres de l'ordre équestre :: P. Salvius Aper et Q. Ostorius Scapula.
+        Leur succésseur peut être un préfet unique.
   - event : 
       title : Âge de la retraite repoussé
       start : 5

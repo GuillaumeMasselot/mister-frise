@@ -5,6 +5,8 @@ import CardContent from '@material-ui/core/CardContent';
 import SectionTitle from './SectionTitle';
 import { parseDate } from '../utils/dateParser';
 
+import ReactHtmlParser from 'react-html-parser';
+
 export default class TimelineDetails extends Component {
 
     getInterval(step) {
@@ -30,10 +32,11 @@ export default class TimelineDetails extends Component {
                         <Timeline>
                         {
                             this.props.timelineSteps.map( (step, i) => {
+                                // const parsedDetails = htmlToReactParser.parse(step.details);
                                 return (
                                     <div id={i} key={i}>
                                         <Event interval={this.getInterval(step)} title={step.title} subtitle={step.subtitle}>
-                                            {step.details}
+                                            {ReactHtmlParser(step.details)}
                                         </Event>
                                     </div>
                                 );
