@@ -9,13 +9,13 @@
 and (min-device-width : 320px) 
 and (max-device-width : 480px){ 
     .mobileHide { display: none !important;}
-    .mobileCenter { text-align: center; margin: auto auto auto auto}
+    .positionLogo { text-align: center; margin: auto auto auto auto}
 }
 
 .desktopHide { display: inline } 
 @media screen and (min-width: 800px) {
     .desktopHide { display: none !important;}
-    .mobileCenter { flex: 1}
+    .positionLogo { flex: 1}
 }
 
 .crossed {
