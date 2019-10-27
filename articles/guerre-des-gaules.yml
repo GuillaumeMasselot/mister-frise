@@ -20,7 +20,7 @@ events:
       title: Les Germains traversent le Rhin
       subtitle: 
       start: -72
-      details: Arioviste traverse le Rhin ainsi que des populations suèves des vallées du Neckar et du Main. Au fil des ans, les peuples germaniques ayant traversé le Rhin atteignent près de 120 000 personnes.
+      details: <strong>Arioviste traverse le Rhin</strong> ainsi que des populations suèves des vallées du Neckar et du Main. Au fil des ans, les peuples germaniques ayant traversé le Rhin atteignent près de 120 000 personnes.
   - event: 
       title: Migration des Helvètes
       subtitle: L'exode
@@ -54,6 +54,19 @@ events:
 
         La guerre est déclarée. Les deux armées progressent jusqu'à une ville celte (à peu près) à mi chemin mais sur place, les locaux décrivent les germains comme terrifiants et le moral des armées romaines est ébranlé. 
         Il est amusant de lire que les fils de riches venus faire leurs classes dans l'armée de César trouvent tous une bonne excuse pour rentrer précipitamment à Rome.
-        César se dépeint alors comme un leader sans peur qui rallie ses troupes par son charisme pour faire face à cette menace. Cassus Dio, lui, décrit une armée appeurée par des adversaires présentés comme des bêtes sauvages et au bord de la mutinerie, ayant le sentiment de prendre d'énormes risques pour la gloire de César et non celle de Rome.
+        César se dépeint alors comme un leader sans peur qui rallie ses troupes par son charisme pour faire face à cette menace. Cassus Dio, lui, décrit une armée appeurée par des adversaires présentés comme des bêtes sauvages et au bord de la mutinerie, 
+        ayant le sentiment de prendre d'énormes risques pour la gloire de César et non celle de Rome.
 
-        Les germains, menés par Arioviste, sont vaincus et Rome s'empare de tous les territoires germains (Suèves).
+        La bataille a toutefois lieu, opposant 30 000 romains à 50/100 000 germains. Le rapport de bataille stipule que le fils de Crassus repère un flanc romain en sous nombre, débordé et qu'il sauve la bataille par son génie militaire.
+        Il est toutefois probable que César fasse ici une faveur à son associé en honorant son fils. Les germains sont finalement sont vaincus et Rome s'empare de tous les territoires germains (Suèves). Arioviste survit mais on n'entendra plus jamais parler de lui.
+  - event:
+      title: Le début de la résistance "Gauloise"
+      subtitle: 
+      start: -57
+      dateLabel:
+      detail: >
+        Avec les helvètes et les germains, l'excuse de la "crise" était un prisme de lecture possible mais quand César établie un camp d'hiver en plein milieu de la Gaule, un signal est lancé.
+        Tous ont déjà vu ce qui s'est passé avec les celtes du sud de l'actuelle France ou des régions voisines.
+        Une insurrection anti romaine apparaît au nord, notamment du côté Belge (un tiers de la Gaule, quand même) et cela donne une fois de plus à César une légitimité pour intervenir.
+        Ces mêmes celtes sont parvenus à rassembler 300 000 guerriers (et on parle ici de vrais guerriers, cela ne compte pas les enfants, les vieux ou personnes inaptes à combattre). Pour convoquer de telles troupes, 
+        il semblerait que les celtes aient adopté un fonctionnement de nature "le dernier clan arrivé sera torturé à mort". Autant dire que ça motive !

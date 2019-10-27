@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import ArticlePreview from '../components/ArticlePreview';
 import SectionTitle from '../components/SectionTitle';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
 
 export default class Home extends Component {
     state = {
@@ -60,6 +63,21 @@ export default class Home extends Component {
                     })
                 }
                 </div>
+                <Typography>
+                    <Button
+                        color="inherit"
+                        component={Link}
+                        onClick={event => {
+                            event.preventDefault()
+                            //update database with user
+                            // this.props.history.location.push('/articles')
+                            // or you can use window.location
+                            window.location.href = '/articles'
+                        }}
+                        >
+                        Plus d'articles
+                    </Button>
+                </Typography>
             </div>
         )
     }
